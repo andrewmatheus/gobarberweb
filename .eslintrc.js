@@ -49,6 +49,14 @@ module.exports = {
     'no-underscore-dangle': 'off',
     camelcase: 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'import/no-extraneous-dependencies': 'off'
+  },
+  settings:{
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src'
+      },
+    },
   },
 };
